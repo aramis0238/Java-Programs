@@ -1,14 +1,4 @@
-/*  Responsible for:
-----------------------------------------------------
-    Aramis M. Figueroa - main(), mainMenu(), readFile(), writeFile(), signup(), login().
-
-    Jared Tracey - readEntries(), logEntries(), displayLoopsModule(), displayArraysModule(), displayIfElseModule().
-
-    Davidson Charleus - displayDataTypesModule(), displaySdkModule(),  displayIfElseModule().
-    
-    Program purpose: This is a program to allow a user to log-in or sign-up if no login is available, 
-                    then open the main menu and allow the user to learn about Java's basic concepts and write/read into/from a text file.
-
+/*
     Input:
         - UserName and password for login/signup
         - Selected menu options for the main menu
@@ -20,7 +10,7 @@
         - Ask for the username and password.
         - Check if the credentials match the entries in the "login_info.txt" file.
         - If a match is found, display a welcome message and proceed to the main menu.
-        - If no match is found, display a login credentials not found message.
+        - If no match is found, display the login credentials not found message.
     3. If signing up:
         - Ask the user to enter a new username and password.
         - Write the username and password to the "login_info.txt" file.
@@ -47,7 +37,7 @@ import java.io.PrintWriter; // file writing
 
 public class FinalProject {
 
-    // Main Function (Aramis M. Figueroa)
+    // Main Function 
     public static void main(String[] args) throws IOException {
         
         // Menu Options (constants)
@@ -93,7 +83,7 @@ public class FinalProject {
         
     }
 
-    // Main menu Function (Aramis M. Figueroa)
+    // Main menu Function 
     public static void mainMenu() throws IOException {
         
         // Menu option (constants)
@@ -189,7 +179,7 @@ public class FinalProject {
     }
 
 
-    //Variable function (Davidson Charleus)
+    //Variable function
     private static void displayVariablesModule() throws IOException {
         System.out.println("---- Variables ----");
         System.out.println("Variables are containers for storing data values.");
@@ -211,7 +201,7 @@ public class FinalProject {
         System.out.println("System.out.println(myNum);");
     }
 
-    // Data Types function (Davidson Charleus)
+    // Data Types function 
     private static void displayDataTypesModule() throws IOException {
         System.out.println("---- Data Types ----");
         System.out.println("Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:");
@@ -219,7 +209,7 @@ public class FinalProject {
         System.out.println("Non-primitive data types: The non-primitve data types include Classes, interfaces, and Arrays.");
     }
 
-    // SDK function (Davidson Charleus)
+    // SDK function 
     private static void displaySdkModule() throws IOException{
         System.out.println("---- SDK ----");
         System.out.println("In Java, a Software Development Kit is the basic tools or building blocks for building an application.");
@@ -228,7 +218,7 @@ public class FinalProject {
         System.out.println("Some examples of SDKs are the Java development kit(JDK), the Windows 7 SDK, the MacOs X SDK, and the iPhone SDK.");
     }
 
-    // If-Else Statements function (JARED TRACEY)
+    // If-Else Statements function
     private static void displayIfElseModule() throws IOException {
     	System.out.println("---- If - Else Statements ----");
         System.out.println("In Java, an If-Else statement allows you to perform different actions ");
@@ -248,7 +238,7 @@ public class FinalProject {
      
     }
     
-    // Loops function (JARED TRACEY)
+    // Loops function 
     private static void displayLoopsModule() throws IOException{
     	System.out.println("---- Loops ----");
 		System.out.println("In Java, loops allow you to execute a block of code repeatedly until a ");
@@ -270,7 +260,7 @@ public class FinalProject {
 	
 	}
     
-    // Arrays function (JARED TRACEY)
+    // Arrays function
     private static void displayArraysModule() throws IOException{
     	System.out.println("---- Arrays ----");
         System.out.println("In Java, an array is a data structure that allows you to store a fixed-size ");
@@ -295,7 +285,7 @@ public class FinalProject {
     }
 
 
-    // Log entries function (JARED TRACEY)
+    // Log entries function 
     public static void logEntries() throws IOException {
         
 
@@ -318,7 +308,7 @@ public class FinalProject {
         System.out.println("-----------------------------------------");
     }
 
-    // Read entries function (JARED TRACEY)
+    // Read entries function 
     public static void readEntries() throws IOException {
        
         System.out.println("Entries read from file" + 
@@ -342,7 +332,7 @@ public class FinalProject {
         System.out.println("-----------------------------------------");
     }
 
-    // Read from file function (Aramis M. Figueroa)
+    // Read from file function 
     public static void readFile(String userName, String password) throws IOException {
 
         // Try/catch block for file reading
@@ -376,7 +366,7 @@ public class FinalProject {
         }
     }
 
-    // Write to file function (Aramis M. Figueroa)
+    // Write to file function 
     public static void writeFile(String userName, String password) throws IOException {
 
         // Create fileWriter object
@@ -389,7 +379,7 @@ public class FinalProject {
         fileWriter.close();
     }
 
-    // Sign-up Function (Aramis M. Figueroa)
+    // Sign-up Function 
     public static void signup() throws IOException {
 
         // Initialize Scanner object
@@ -415,7 +405,7 @@ public class FinalProject {
         }
     }
 
-    // Login Function (Aramis M. Figueroa)
+    // Login Function 
     public static void login() throws IOException {
 
         // Initialize Scanner object
