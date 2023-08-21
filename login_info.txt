@@ -1,0 +1,10 @@
+Aramis password123
+bob 12345
+Aramis0238 aramis10
+Albert 123
+bob 456
+isa 504
+bob 23
+tom 123
+tim 123
+ted 789
