@@ -1,5 +1,3 @@
-Hello this is Aramis testing.
-Hello this is what im typing
-Blablablablablabla
-osdosdosdoo
-gohghgohgo
+Today I learned about what an SDK (software development kit) is!
+Arrays make so much sense now because of this program!
+I love to program in Java!
